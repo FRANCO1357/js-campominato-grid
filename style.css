@@ -4,44 +4,71 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: dodgerblue;
-    height: 100vh;
+header{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+img{
+    height: 8vh;
+}
+
+button{
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: yellowgreen;
+    box-shadow: 0 0 3px black;
+    cursor: pointer;
+}
+
+select{
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: yellowgreen;
+    box-shadow: 0 0 3px black;
+    cursor: pointer;
+}
+
+main{
+    background-color: grey;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.grid{
-    width: 600px;
-    height: 600px;
+#grid{
+    width: 80vh;
+    height: 80vh;
     background-color: yellowgreen;
-}
-
-.grid .row{
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.grid .row .cell{
+#grid .cell{
     border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
-.grid .row .cell.hard{
+#grid .cell.easy{
     height: calc(100% / 10);
     width: calc(100% / 10);
 }
 
-.grid .row .cell.medium{
+#grid .cell.medium{
     height: calc(100% / 9);
     width: calc(100% / 9);
 }
 
-.grid .row .cell.easy{
+#grid .cell.hard{
     height: calc(100% / 8);
     width: calc(100% / 8);
 }
