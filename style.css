@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: dodgerblue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    width: 600px;
+    height: 600px;
+    background-color: yellowgreen;
+}
+
+.grid .row{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid .row .cell{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid .row .cell.hard{
+    height: calc(100% / 10);
+    width: calc(100% / 10);
+}
+
+.grid .row .cell.medium{
+    height: calc(100% / 9);
+    width: calc(100% / 9);
+}
+
+.grid .row .cell.easy{
+    height: calc(100% / 8);
+    width: calc(100% / 8);
+}
+
